@@ -12,7 +12,7 @@ const Counter: React.FC = () => {
   };
 
   const handleIncrement = () => {
-    dispatch(decrement());
+    dispatch(increment());
   };
   return (
     <div>
