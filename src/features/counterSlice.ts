@@ -21,8 +21,8 @@ interface User {
 
 export const fetchByUsername = createAsyncThunk(
   "counter/fetchSomeUsername",
-  async (username: string) => {
-    const req = await fetch(`https://api.github.com/users/${username}`);
+  async () => {
+    const req = await fetch(`https://api.github.com/users/alexalannunes`);
     const response = await req.json();
     return response as User;
   }
