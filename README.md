@@ -18,4 +18,4 @@ In this template, I made a simple `<Counter />` with react and redux/toolkit:
 * [Redux.js](https://redux.js.org/)
 * [Redux/Toolkit](https://redux-toolkit.js.org/)
 * [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-* [Mock Service Worker](https://mswjs.io/docs/getting-started/mocks)
+* [Mock Service Worker](https://mswjs.io)
