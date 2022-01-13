@@ -18,7 +18,7 @@ afterEach(() => server.resetHandlers());
 
 // Disable API mocking after the tests are done.
 afterAll(() => server.close());
-test("click to increment, decrement and incrememnt amount", async () => {
+test("click to increment, decrement, incrememnt amount and get my github id", async () => {
   render(<Counter />);
 
   const headerCount = screen.getByRole("heading");
