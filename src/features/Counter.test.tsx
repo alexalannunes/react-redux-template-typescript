@@ -8,6 +8,7 @@ test("click to increment, decrement and incrememnt amount", async () => {
   const btnDecrement = screen.getByTestId("decrement");
   const btnIncrement = screen.getByTestId("increment");
   const btnIncrementAmount = screen.getByTestId("incrementAmount");
+  const btnGithubId = screen.getByTestId("githubId");
 
   expect(headerCount).toBeInTheDocument();
   expect(headerCount).toHaveTextContent("0");
@@ -20,4 +21,7 @@ test("click to increment, decrement and incrememnt amount", async () => {
 
   fireEvent.click(btnIncrementAmount);
   expect(headerCount).toHaveTextContent("10");
+
+  fireEvent.click(btnGithubId);
+  expect(await screen.findByText("16847836")).toBeInTheDocument();
 });
